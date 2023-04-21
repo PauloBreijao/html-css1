@@ -1,0 +1,48 @@
+h1 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin: 10px auto 20px auto;
+}
+
+nav {
+    text-align: center;
+    color: darkslateblue;
+    
+}
+
+a {
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px auto 10px auto;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
+    font-size: 1.5em;
+}
+
+section {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(41, 41, 255, 0.384);
+    font-size: 2em;
+    box-shadow: 2px 2px 2px 1px rgba(49, 49, 49, 0.521);
+}
+
+article {
+    border-radius: 15px 0px 15px 0px;
+    font-size: 0.5em;
+    background-color: aqua;
+}
+footer {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    width: 400px;
+}

@@ -1,0 +1,25 @@
+h1 {
+
+    /* display: inline; faz com que uma box vire uma caixa e vice versa*/
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+
+    /*existe a opção "border: 10px solid black" que faria a mesma coisa */
+
+    padding-top: 10px;
+    padding-right: 9px;
+    padding-bottom: 8px;
+    padding-left: 7px;
+
+    /*existe a opção "padding: 10px 9px 8px 7px" que faria a mesma coisa 
+    colocando apenas uma vez muda os 4 lados*/
+
+    margin: auto; /*centraliza a caixa na página*/
+    
+    outline-color: aqua; /*colore a margem, mas não está aparenmte nesse projeto*/
+    outline-style: dashed;
+}
