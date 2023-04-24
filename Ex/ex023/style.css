@@ -5,6 +5,13 @@ body {
 table {
     width: 500px;
     border-collapse: collapse;
+    position: relative;
+}
+
+thead > tr > th { /*isso + (table {position: relative;) mantem o cabeçalho fixo*/
+    position: sticky;
+    top: -1px;
+    background-color: black;
 }
 
 td, th {
