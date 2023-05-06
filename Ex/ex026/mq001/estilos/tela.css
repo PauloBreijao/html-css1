@@ -1,0 +1,18 @@
+@charset "UFT-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+li {
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid green;
+}
