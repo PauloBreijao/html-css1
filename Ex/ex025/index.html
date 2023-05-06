@@ -9,29 +9,94 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     <form action="cadastro.php" method="post"> <!--Para enviar os dados para o backend usar 'action="arquivo.ling"'-->
-        <p>
-            <label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome" required placeholder="Nome do usuário">
-        </p>
-        <p>
-            <label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome" required>
-        </p>
-        <p>
-            <label for="iidade">Idade:</label>
-            <input type="number" name="idade" id="iidade" required minlength="1" maxlength="3" min="6" max="110" step="0.5">
-        </p>
-        <p>
-            <label for="idata">Data de nascimento:</label>
-            <input type="date" nome="data" id="idata">
-        </p>
-        <p>
-            <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="20">
-        </p>          
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome do usuário">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required>
+            </p>
+            <p>
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade" id="iidade" required minlength="1" maxlength="3" min="6" max="110" step="0.5">
+            </p>
+            <p>
+                <label for="idata">Data de nascimento:</label>
+                <input type="date" nome="data" id="idata">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="6" maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" required>
+                <!--saber mais procurar sobre RegEx-->
+            </p>
+            <p>
+                Sexo: <br>
+                <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+                <input type="radio" name="sexo" id="inb" value="NB"><label for="inb">Não bináro</label>
+            </p>
+            <p>
+                Habilidades: <br>
+                <input type="checkbox" name="pular" id="ipular"><label for="ipular">Pular</label>
+                <input type="checkbox" name="correr" id="icorrer"><label for="icorrer">Correr</label>
+                <input type="checkbox" name="lancar" id="ilancar"><label for="ilancar">Lançar</label>
+            </p>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">Nível:</label>
+                <input type="range" name="nivel" id="inivel">
+            </p>
+            <p>
+                <label for="ifoto">Foto de perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="ES">Espirito Santo</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Eletricista</option>
+                    <option>Bancário</option>
+                    <option>Advogado</option>
+                    <option>Médico</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </fieldset>
         </p>
     </form>
 </body>
