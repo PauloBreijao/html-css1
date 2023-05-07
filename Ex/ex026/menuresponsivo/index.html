@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
-        <menu>
+        <h1>Hoje tem Jogo</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
-                <li><a href="#">O Botafogo</a></li>
-                <li><a href="#">O Glorioso</a></li>
-                <li><a href="#">Meu Grande Amor</a></li>
+                <li><a href="#">Do Botafogo</a></li>
+                <li><a href="#">O Glorioso é</a></li>
+                <li><a href="#">O Meu Grande Amor</a></li>
                 <li><a href="#">Te amo Fogo</a></li>
                 <li><a href="#">Te amo Fogo!</a></li>
             </ul>
@@ -22,10 +24,20 @@
     </header>
     <main>
         <article>
-            <h2>Olha esse menu!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, numquam, delectus nihil et odit quas ipsam eos officia ipsa ipsum laborum doloribus libero cupiditate ullam in, architecto magni nostrum itaque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporibus nobis distinctio laborum possimus exercitationem inventore! Porro rerum ea sequi sit explicabo a dignissimos similique consectetur, quisquam, sed veniam voluptatum.</p>
+            <h2>Fogo!</h2>
+            <p>Fogoooooooooooooooooooooooo ooo, fogooooooo ooooo ooooooooo o Botafogo fogo!</p>
+            <p>Fogoooooooooooooooooooooooo ooo, fogooooooo ooooo ooooooooo o Botafogo fogo!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } 
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
