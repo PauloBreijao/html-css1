@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* valores encontrados em Typical Device Breakpoints*/
+
+@media print {
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    html {
+        background-color: blue;
+    }
+
+    main {
+        font-size: 1.5em;
+        max-width: 760px;
+        height: 300px;
+    }
+
+    div {
+        width: 100px;
+        height: 140px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    html {
+        background-color: darkgreen;
+    }
+
+    main {
+        font-size: 2em;
+        max-width: 900px;
+        height: 350px;
+    }
+
+    div {
+        width: 230px;
+        height: 150px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    html {
+        background-color: orange;
+    }
+
+    main {
+        font-size: 2.5em;
+        max-width: 1050px;
+        height: 400px;
+    }
+
+    div {
+        width: 320px;
+        height: 180px;
+    }
+}
