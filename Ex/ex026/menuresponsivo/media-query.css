@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+    span#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        text-align: left;
+        background-color: black;
+    }
+
+    li {
+        display: inline-block;
+        background-color:  rgba(109, 109, 109, 0.397);
+        border-radius: 3px;
+    }
+}
