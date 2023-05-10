@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    h1, p {
+        font-size: 1.2em;
+    }
+
     section#login {
         width: 90vw;
     }
@@ -16,11 +20,27 @@
     section#login > div#formulario {
         float: right;
         width: 65%;
-        font-size: 1.2em;
-    }    
+    }
+    
+    form > div.campo {
+        max-width: 200px;
+    }
+
+    form > input[type=submit] {
+        max-width: 200px;
+    }
+
+    form > a.botao {
+        max-width: 200px;
+    }
 }
 
 @media screen and (min-width: 993px) {
+
+    h1, p {
+        font-size: 1.4em;
+    }
+
     section#login {
         width: 990px;
     }
@@ -34,7 +54,5 @@
     section#login > div#formulario {
         float: left;
         width: 45%;
-        font-size: 1.4em;
-
     }
 }
